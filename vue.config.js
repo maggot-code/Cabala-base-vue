@@ -2,7 +2,7 @@
  * @Author: maggot-code
  * @Date: 2020-12-22 22:26:52
  * @LastEditors: maggot-code
- * @LastEditTime: 2020-12-22 22:54:42
+ * @LastEditTime: 2020-12-29 14:29:01
  * @Description: file content
  */
 const resolves = dir => require('path').join(__dirname, dir)
@@ -20,12 +20,6 @@ module.exports = {
             })
         config.resolve.alias
             .set('@', resolves('src'))
-            .set('@u', resolves('src/utils'))
-            .set('@c', resolves('src/components'))
-            .set('@api', resolves('src/api'))
-            .set('@v', resolves('src/views'))
-            .set('@config', resolves('src/config'))
-            .set('@img', resolves('src/assets/images'))
     },
     configureWebpack: config => {
         // 调试JS
